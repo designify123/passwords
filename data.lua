@@ -21,7 +21,7 @@ data = {
     rank = "member"
   },
   bottybot = {
-    whitelist-type = "websocket",
-    whitelist-id = "96
+    whitelisttype = "websocket",
+    whitelistid = "96
   }
 }
