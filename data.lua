@@ -22,6 +22,6 @@ data = {
   },
   bottybot = {
     whitelisttype = "websocket",
-    whitelistid = "96
+    whitelistid = 96
   }
 }
