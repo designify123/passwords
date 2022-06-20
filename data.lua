@@ -19,7 +19,7 @@ data = {
     unique = 062,
     token = "black",
     rank = "member"
-  }
+  },
   bottybot = {
     whitelist-type = "websocket",
     whitelist-id = "96
