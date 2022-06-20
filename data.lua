@@ -17,7 +17,7 @@ data = {
     id = 0,
     alt_id = 0,
     unique = 062,
-    token = "black",
+    token = "black123",
     rank = "member"
   },
   bottybot = {
