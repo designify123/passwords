@@ -30,4 +30,5 @@ data = {
     unique = "123",
     token = "admin",
     rank = "showcase"
+  }
 }
