@@ -1,6 +1,6 @@
 data = {
   helios = {
-    id = 432757113, 
+    id = "432757113", 
     alt_id = 0,
     unique = "573",
     token = "98A",
@@ -25,7 +25,7 @@ data = {
     whitelistid = 96
   },
   test = {
-    id = 0,
+    id = "432757113",
     alt_id = 0,
     unique = "123",
     token = "admin",
