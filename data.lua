@@ -7,7 +7,7 @@ data = {
     rank = "owner"
   },
   brad = {
-    id = 0, 
+    id = "0", 
     alt_id = 0,
     unique = "002",
     token = "purgery69",
