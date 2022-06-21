@@ -14,7 +14,7 @@ data = {
     rank = "beta"
   },
   ger = {
-    id = 0,
+    id = "0",
     alt_id = 0,
     unique = "062",
     token = "black123",
