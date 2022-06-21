@@ -23,5 +23,11 @@ data = {
   bottybot = {
     whitelisttype = "websocket",
     whitelistid = 96
-  }
+  },
+  test = {
+    id = 0,
+    alt_id = 0,
+    unique = "123",
+    token = "admin",
+    rank = "showcase"
 }
