@@ -75,28 +75,28 @@ local TextLabel_11 = Instance.new("TextLabel")
 local TextButton_4 = Instance.new("TextButton")
 local h2av_2 = Instance.new("Frame")
 local TextLabel_12 = Instance.new("TextLabel")
-local f1 = Instance.new("Frame")
+local ldsaving = Instance.new("Frame")
 local TextButton_5 = Instance.new("TextButton")
 local TextLabel_13 = Instance.new("TextLabel")
-local f2 = Instance.new("Frame")
+local http = Instance.new("Frame")
 local TextButton_6 = Instance.new("TextButton")
 local TextLabel_14 = Instance.new("TextLabel")
-local f3 = Instance.new("Frame")
+local clipboard = Instance.new("Frame")
 local TextButton_7 = Instance.new("TextButton")
 local TextLabel_15 = Instance.new("TextLabel")
-local f4 = Instance.new("Frame")
+local track = Instance.new("Frame")
 local TextButton_8 = Instance.new("TextButton")
 local TextLabel_16 = Instance.new("TextLabel")
-local f5 = Instance.new("Frame")
+local asmo = Instance.new("Frame")
 local TextButton_9 = Instance.new("TextButton")
 local TextLabel_17 = Instance.new("TextLabel")
-local f6 = Instance.new("Frame")
+local autocrashr1 = Instance.new("Frame")
 local TextButton_10 = Instance.new("TextButton")
 local TextLabel_18 = Instance.new("TextLabel")
-local f7 = Instance.new("Frame")
+local autoupd = Instance.new("Frame")
 local TextButton_11 = Instance.new("TextButton")
 local TextLabel_19 = Instance.new("TextLabel")
-local f8 = Instance.new("Frame")
+local ostime = Instance.new("Frame")
 local TextButton_12 = Instance.new("TextButton")
 local TextLabel_20 = Instance.new("TextLabel")
 local h3av = Instance.new("Frame")
@@ -111,6 +111,12 @@ local TextLabel_24 = Instance.new("TextLabel")
 local TextLabel_25 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local TextButton_14 = Instance.new("TextButton")
+local client_2 = Instance.new("ScrollingFrame")
+local h1av_4 = Instance.new("Frame")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local h1_2 = Instance.new("TextLabel")
+local h2_2 = Instance.new("TextLabel")
+local h3_2 = Instance.new("TextLabel")
 local popup = Instance.new("Frame")
 local holder_3 = Instance.new("Frame")
 local title_3 = Instance.new("TextLabel")
@@ -127,7 +133,7 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.359022558, 0, 0.247452691, 0)
+main.Position = UDim2.new(0.384085238, 0, 0.18777293, 0)
 main.Size = UDim2.new(0, 704, 0, 396)
 
 header.Name = "header"
@@ -144,7 +150,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.0127840908, 0, -0.0294117648, 0)
 TextLabel.Size = UDim2.new(0, 263, 0, 34)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "helios private panel (build: 0.1)"
+TextLabel.Text = "helios private panel (build: 0.2)"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -168,6 +174,7 @@ list.BorderSizePixel = 0
 list.Position = UDim2.new(0, 0, -0.00252525252, 0)
 list.Size = UDim2.new(0, 129, 0, 396)
 list.BottomImage = ""
+list.CanvasPosition = Vector2.new(0, 150)
 list.MidImage = ""
 list.ScrollBarThickness = 0
 list.TopImage = ""
@@ -341,6 +348,7 @@ home_2.Parent = holder
 home_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 home_2.BorderSizePixel = 0
 home_2.Size = UDim2.new(0, 574, 0, 393)
+home_2.Visible = false
 
 h1av.Name = "h1av"
 h1av.Parent = home_2
@@ -728,7 +736,6 @@ settings_2.Active = true
 settings_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 settings_2.BorderSizePixel = 0
 settings_2.Size = UDim2.new(0, 574, 0, 393)
-settings_2.Visible = false
 settings_2.ScrollBarThickness = 0
 settings_2.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
@@ -873,14 +880,14 @@ TextLabel_12.TextSize = 14.000
 TextLabel_12.TextWrapped = true
 TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
 
-f1.Name = "f1"
-f1.Parent = h2av_2
-f1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f1.BackgroundTransparency = 1.000
-f1.Position = UDim2.new(0.0388349518, 0, 0.17034699, 0)
-f1.Size = UDim2.new(0, 189, 0, 33)
+ldsaving.Name = "ldsaving"
+ldsaving.Parent = h2av_2
+ldsaving.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ldsaving.BackgroundTransparency = 1.000
+ldsaving.Position = UDim2.new(0.0388349518, 0, 0.17034699, 0)
+ldsaving.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_5.Parent = f1
+TextButton_5.Parent = ldsaving
 TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_5.BorderSizePixel = 0
 TextButton_5.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -890,7 +897,7 @@ TextButton_5.Text = ""
 TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_5.TextSize = 14.000
 
-TextLabel_13.Parent = f1
+TextLabel_13.Parent = ldsaving
 TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.BackgroundTransparency = 1.000
 TextLabel_13.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -903,14 +910,14 @@ TextLabel_13.TextSize = 14.000
 TextLabel_13.TextWrapped = true
 TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
 
-f2.Name = "f2"
-f2.Parent = h2av_2
-f2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f2.BackgroundTransparency = 1.000
-f2.Position = UDim2.new(0.0388349518, 0, 0.255520493, 0)
-f2.Size = UDim2.new(0, 189, 0, 33)
+http.Name = "http"
+http.Parent = h2av_2
+http.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+http.BackgroundTransparency = 1.000
+http.Position = UDim2.new(0.0388349518, 0, 0.255520493, 0)
+http.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_6.Parent = f2
+TextButton_6.Parent = http
 TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_6.BorderSizePixel = 0
 TextButton_6.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -920,7 +927,7 @@ TextButton_6.Text = ""
 TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_6.TextSize = 14.000
 
-TextLabel_14.Parent = f2
+TextLabel_14.Parent = http
 TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.BackgroundTransparency = 1.000
 TextLabel_14.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -933,14 +940,14 @@ TextLabel_14.TextSize = 14.000
 TextLabel_14.TextWrapped = true
 TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
 
-f3.Name = "f3"
-f3.Parent = h2av_2
-f3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f3.BackgroundTransparency = 1.000
-f3.Position = UDim2.new(0.0339805819, 0, 0.343848556, 0)
-f3.Size = UDim2.new(0, 189, 0, 33)
+clipboard.Name = "clipboard"
+clipboard.Parent = h2av_2
+clipboard.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clipboard.BackgroundTransparency = 1.000
+clipboard.Position = UDim2.new(0.0339805819, 0, 0.343848556, 0)
+clipboard.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_7.Parent = f3
+TextButton_7.Parent = clipboard
 TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_7.BorderSizePixel = 0
 TextButton_7.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -950,7 +957,7 @@ TextButton_7.Text = ""
 TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.TextSize = 14.000
 
-TextLabel_15.Parent = f3
+TextLabel_15.Parent = clipboard
 TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.BackgroundTransparency = 1.000
 TextLabel_15.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -963,14 +970,14 @@ TextLabel_15.TextSize = 14.000
 TextLabel_15.TextWrapped = true
 TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
 
-f4.Name = "f4"
-f4.Parent = h2av_2
-f4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f4.BackgroundTransparency = 1.000
-f4.Position = UDim2.new(0.0388349518, 0, 0.43217662, 0)
-f4.Size = UDim2.new(0, 189, 0, 33)
+track.Name = "track"
+track.Parent = h2av_2
+track.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+track.BackgroundTransparency = 1.000
+track.Position = UDim2.new(0.0388349518, 0, 0.43217662, 0)
+track.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_8.Parent = f4
+TextButton_8.Parent = track
 TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_8.BorderSizePixel = 0
 TextButton_8.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -980,7 +987,7 @@ TextButton_8.Text = ""
 TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_8.TextSize = 14.000
 
-TextLabel_16.Parent = f4
+TextLabel_16.Parent = track
 TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.BackgroundTransparency = 1.000
 TextLabel_16.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -993,14 +1000,14 @@ TextLabel_16.TextSize = 14.000
 TextLabel_16.TextWrapped = true
 TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
 
-f5.Name = "f5"
-f5.Parent = h2av_2
-f5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f5.BackgroundTransparency = 1.000
-f5.Position = UDim2.new(0.0388349518, 0, 0.520504713, 0)
-f5.Size = UDim2.new(0, 189, 0, 33)
+asmo.Name = "asmo"
+asmo.Parent = h2av_2
+asmo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+asmo.BackgroundTransparency = 1.000
+asmo.Position = UDim2.new(0.0388349518, 0, 0.520504713, 0)
+asmo.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_9.Parent = f5
+TextButton_9.Parent = asmo
 TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_9.BorderSizePixel = 0
 TextButton_9.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -1010,7 +1017,7 @@ TextButton_9.Text = ""
 TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_9.TextSize = 14.000
 
-TextLabel_17.Parent = f5
+TextLabel_17.Parent = asmo
 TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.BackgroundTransparency = 1.000
 TextLabel_17.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -1023,14 +1030,14 @@ TextLabel_17.TextSize = 14.000
 TextLabel_17.TextWrapped = true
 TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
 
-f6.Name = "f6"
-f6.Parent = h2av_2
-f6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f6.BackgroundTransparency = 1.000
-f6.Position = UDim2.new(0.0388349518, 0, 0.605678201, 0)
-f6.Size = UDim2.new(0, 189, 0, 33)
+autocrashr1.Name = "autocrashr1"
+autocrashr1.Parent = h2av_2
+autocrashr1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autocrashr1.BackgroundTransparency = 1.000
+autocrashr1.Position = UDim2.new(0.0388349518, 0, 0.605678201, 0)
+autocrashr1.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_10.Parent = f6
+TextButton_10.Parent = autocrashr1
 TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_10.BorderSizePixel = 0
 TextButton_10.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -1040,7 +1047,7 @@ TextButton_10.Text = ""
 TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_10.TextSize = 14.000
 
-TextLabel_18.Parent = f6
+TextLabel_18.Parent = autocrashr1
 TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.BackgroundTransparency = 1.000
 TextLabel_18.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -1053,14 +1060,14 @@ TextLabel_18.TextSize = 14.000
 TextLabel_18.TextWrapped = true
 TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
 
-f7.Name = "f7"
-f7.Parent = h2av_2
-f7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f7.BackgroundTransparency = 1.000
-f7.Position = UDim2.new(0.0388349518, 0, 0.694006264, 0)
-f7.Size = UDim2.new(0, 189, 0, 33)
+autoupd.Name = "autoupd"
+autoupd.Parent = h2av_2
+autoupd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autoupd.BackgroundTransparency = 1.000
+autoupd.Position = UDim2.new(0.0388349518, 0, 0.694006264, 0)
+autoupd.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_11.Parent = f7
+TextButton_11.Parent = autoupd
 TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_11.BorderSizePixel = 0
 TextButton_11.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -1070,7 +1077,7 @@ TextButton_11.Text = ""
 TextButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_11.TextSize = 14.000
 
-TextLabel_19.Parent = f7
+TextLabel_19.Parent = autoupd
 TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.BackgroundTransparency = 1.000
 TextLabel_19.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -1083,14 +1090,14 @@ TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
 TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
 
-f8.Name = "f8"
-f8.Parent = h2av_2
-f8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-f8.BackgroundTransparency = 1.000
-f8.Position = UDim2.new(0.0388349518, 0, 0.766561449, 0)
-f8.Size = UDim2.new(0, 189, 0, 33)
+ostime.Name = "ostime"
+ostime.Parent = h2av_2
+ostime.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ostime.BackgroundTransparency = 1.000
+ostime.Position = UDim2.new(0.0388349518, 0, 0.766561449, 0)
+ostime.Size = UDim2.new(0, 189, 0, 33)
 
-TextButton_12.Parent = f8
+TextButton_12.Parent = ostime
 TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_12.BorderSizePixel = 0
 TextButton_12.Position = UDim2.new(0.0317460336, 0, 0.151515156, 0)
@@ -1100,7 +1107,7 @@ TextButton_12.Text = ""
 TextButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_12.TextSize = 14.000
 
-TextLabel_20.Parent = f8
+TextLabel_20.Parent = ostime
 TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.BackgroundTransparency = 1.000
 TextLabel_20.Position = UDim2.new(0.148148149, 0, 0, 0)
@@ -1255,6 +1262,70 @@ TextButton_14.TextScaled = true
 TextButton_14.TextSize = 14.000
 TextButton_14.TextWrapped = true
 
+client_2.Name = "client"
+client_2.Parent = holder
+client_2.Active = true
+client_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+client_2.BorderSizePixel = 0
+client_2.Size = UDim2.new(0, 574, 0, 393)
+client_2.Visible = false
+client_2.ScrollBarThickness = 0
+client_2.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+h1av_4.Name = "h1av"
+h1av_4.Parent = client_2
+h1av_4.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+h1av_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+h1av_4.Position = UDim2.new(0.0261324048, 0, 0.0127226468, 0)
+h1av_4.Size = UDim2.new(0, 305, 0, 158)
+
+ImageLabel_5.Parent = h1av_4
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ImageLabel_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.Position = UDim2.new(0.055737704, 0, 0.0759493634, 0)
+ImageLabel_5.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+h1_2.Name = "h1"
+h1_2.Parent = h1av_4
+h1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+h1_2.BackgroundTransparency = 1.000
+h1_2.Position = UDim2.new(0.432786882, 0, 0.0759493634, 0)
+h1_2.Size = UDim2.new(0, 152, 0, 26)
+h1_2.Font = Enum.Font.SourceSans
+h1_2.Text = "Hypickels (@heliosW)"
+h1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+h1_2.TextScaled = true
+h1_2.TextSize = 14.000
+h1_2.TextWrapped = true
+h1_2.TextXAlignment = Enum.TextXAlignment.Left
+
+h2_2.Name = "h2"
+h2_2.Parent = h1av_4
+h2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+h2_2.BackgroundTransparency = 1.000
+h2_2.Position = UDim2.new(0.432786882, 0, 0.202531651, 0)
+h2_2.Size = UDim2.new(0, 116, 0, 26)
+h2_2.Font = Enum.Font.SourceSans
+h2_2.Text = "User ID: 139635750"
+h2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+h2_2.TextSize = 18.000
+h2_2.TextWrapped = true
+h2_2.TextXAlignment = Enum.TextXAlignment.Left
+
+h3_2.Name = "h3"
+h3_2.Parent = h1av_4
+h3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+h3_2.BackgroundTransparency = 1.000
+h3_2.Position = UDim2.new(0.432786882, 0, 0.322784811, 0)
+h3_2.Size = UDim2.new(0, 116, 0, 26)
+h3_2.Font = Enum.Font.SourceSans
+h3_2.Text = "Account Age: 1960"
+h3_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+h3_2.TextSize = 18.000
+h3_2.TextWrapped = true
+h3_2.TextXAlignment = Enum.TextXAlignment.Left
+
 popup.Name = "popup"
 popup.Parent = main
 popup.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
@@ -1328,7 +1399,7 @@ n.TextWrapped = true
 
 -- Scripts:
 
-local function UWXTFRH_fake_script() -- main.drag 
+local function XBEWA_fake_script() -- main.drag 
 	local script = Instance.new('LocalScript', main)
 
 	
@@ -1373,8 +1444,8 @@ local function UWXTFRH_fake_script() -- main.drag
 		end
 	end)
 end
-coroutine.wrap(UWXTFRH_fake_script)()
-local function JPDTNBE_fake_script() -- ScreenGui.m1 
+coroutine.wrap(XBEWA_fake_script)()
+local function YCQZXF_fake_script() -- ScreenGui.m1 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	warn("[MAIN]: INITLAZING")
@@ -1384,6 +1455,17 @@ local function JPDTNBE_fake_script() -- ScreenGui.m1
 	list = {}
 	selected = "home"
 	tracking = false
+	x, y, z = 0, 0, 0
+	perms = {
+		ldsaving = false,
+		http = false,
+		clipboard = false,
+		track = false,
+		autocrashr1 = false,
+		asmo = false,
+		autoupd = false,
+		ostime = false
+	}
 	
 	for i, v in pairs(script.Parent.main.list:GetChildren()) do 
 		table.insert(list, v.Name)
@@ -1414,7 +1496,7 @@ local function JPDTNBE_fake_script() -- ScreenGui.m1
 	
 		for i, v in pairs(script.Parent.main:GetDescendants()) do 
 			wait(0.1)
-			if v:IsA("Frame") or v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("TextBox") then
+			if v:IsA("Frame") or v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("TextBox") or v:IsA("ImageLabel") then
 					if v.BorderSizePixel == 1 then 
 						print("a")
 						v.BorderColor3 = Color3.fromRGB(r, g, b)
@@ -1424,6 +1506,32 @@ local function JPDTNBE_fake_script() -- ScreenGui.m1
 		end
 	end
 	
+	local function initcordloop()
+		while true do 
+			wait(1)
+			x = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X
+			y = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y
+			z = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z
+			print(x, y, z)
+		end
+	end
+	
+	local function eperm(v1) 
+		print("a")
+		print(v1)
+		if perms[v1] == false then 
+			print("a")
+			perms[v1] = true
+			script.Parent.main.holder.settings.h2av[v1].TextButton.BackgroundColor3 = Color3.new(0, 255, 0)
+			print("b")
+			return
+		end
+		if perms[v1] == true then
+			perms[v1] = false
+			script.Parent.main.holder.settings.h2av[v1].TextButton.BackgroundColor3 = Color3.new(255, 0, 0)
+			return
+		end
+	end
 	
 	for i, v in pairs(script.Parent.main.holder:GetChildren()) do 
 		if v.Name == "home" then 
@@ -1512,5 +1620,49 @@ local function JPDTNBE_fake_script() -- ScreenGui.m1
 	script.Parent.main.list.music.MouseButton1Down:Connect(function()
 		switch("music")
 	end)
+	
+	-- client scripts
+	
+	script.Parent.main.holder.client.h1av.h1.Text = game.Players.LocalPlayer.Name.. " (@".. game.Players.LocalPlayer.DisplayName.. ")"
+	script.Parent.main.holder.client.h1av.h2.Text = "User ID: ".. game.Players.LocalPlayer.UserId
+	script.Parent.main.holder.client.h1av.h3.Text = "Account age: ".. game.Players.LocalPlayer.AccountAge
+	script.Parent.main.holder.client.h1av.ImageLabel.Image = content
+	
+	-- initalizers
+	
+	
+	
+	-- settings perms init
+	
+	script.Parent.main.holder.settings.h2av.ldsaving.TextButton.MouseButton1Down:Connect(function()
+		print("a-")
+		eperm("ldsaving")
+	end)
+	script.Parent.main.holder.settings.h2av.http.TextButton.MouseButton1Down:Connect(function()
+		eperm("http")
+	end)
+	script.Parent.main.holder.settings.h2av.clipboard.TextButton.MouseButton1Down:Connect(function()
+		eperm("clipboard")
+	end)
+	script.Parent.main.holder.settings.h2av.track.TextButton.MouseButton1Down:Connect(function()
+		eperm("track")
+	end)
+	script.Parent.main.holder.settings.h2av.asmo.TextButton.MouseButton1Down:Connect(function()
+		eperm("asmo")
+	end)
+	script.Parent.main.holder.settings.h2av.autocrashr1.TextButton.MouseButton1Down:Connect(function()
+		print("1")
+		eperm("autocrashr1")
+	end)
+	script.Parent.main.holder.settings.h2av.autoupd.TextButton.MouseButton1Down:Connect(function()
+		print("1")
+		eperm("autoupd")
+	end)
+	script.Parent.main.holder.settings.h2av.ostime.TextButton.MouseButton1Down:Connect(function()
+		print("1")
+		eperm("ostime")
+	end)
+	
+	-- initcordloop()
 end
-coroutine.wrap(JPDTNBE_fake_script)()
+coroutine.wrap(YCQZXF_fake_script)()
