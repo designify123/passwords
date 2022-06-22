@@ -1328,7 +1328,7 @@ n.TextWrapped = true
 
 -- Scripts:
 
-local function YPBJS_fake_script() -- main.drag 
+local function UWXTFRH_fake_script() -- main.drag 
 	local script = Instance.new('LocalScript', main)
 
 	
@@ -1373,8 +1373,8 @@ local function YPBJS_fake_script() -- main.drag
 		end
 	end)
 end
-coroutine.wrap(YPBJS_fake_script)()
-local function ERJW_fake_script() -- ScreenGui.m1 
+coroutine.wrap(UWXTFRH_fake_script)()
+local function JPDTNBE_fake_script() -- ScreenGui.m1 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	warn("[MAIN]: INITLAZING")
@@ -1389,7 +1389,7 @@ local function ERJW_fake_script() -- ScreenGui.m1
 		table.insert(list, v.Name)
 	end
 	
-	script.Parent.main.holder.home.h1av.TextLabel.Text = math.random(100000000, 1000000000000000)
+	script.Parent.main.holder.home.h1av.TextLabel.Text = "My Public Session ID: ".. math.random(1, 500000369)
 	
 	local function switch(targ)
 		if targ == selected then
@@ -1513,4 +1513,4 @@ local function ERJW_fake_script() -- ScreenGui.m1
 		switch("music")
 	end)
 end
-coroutine.wrap(ERJW_fake_script)()
+coroutine.wrap(JPDTNBE_fake_script)()
