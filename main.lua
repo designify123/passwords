@@ -60,9 +60,20 @@ local infyield = Instance.new("Frame")
 local title = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
+local settings_2 = Instance.new("ScrollingFrame")
+local h1av_3 = Instance.new("Frame")
+local title_2 = Instance.new("TextLabel")
+local color = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local inputr = Instance.new("TextBox")
+local inputg = Instance.new("TextBox")
+local inputb = Instance.new("TextBox")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
 local popup = Instance.new("Frame")
 local holder_3 = Instance.new("Frame")
-local title_2 = Instance.new("TextLabel")
+local title_3 = Instance.new("TextLabel")
 local desc = Instance.new("TextLabel")
 local y = Instance.new("TextButton")
 local n = Instance.new("TextButton")
@@ -280,6 +291,7 @@ home_2.Parent = holder
 home_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 home_2.BorderSizePixel = 0
 home_2.Size = UDim2.new(0, 574, 0, 393)
+home_2.Visible = false
 
 h1av.Name = "h1av"
 h1av.Parent = home_2
@@ -648,6 +660,136 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 
+settings_2.Name = "settings"
+settings_2.Parent = holder
+settings_2.Active = true
+settings_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+settings_2.BorderSizePixel = 0
+settings_2.Size = UDim2.new(0, 574, 0, 393)
+settings_2.ScrollBarThickness = 0
+settings_2.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+h1av_3.Name = "h1av"
+h1av_3.Parent = settings_2
+h1av_3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+h1av_3.BorderSizePixel = 0
+h1av_3.Position = UDim2.new(0.0209059231, 0, 0.0152671756, 0)
+h1av_3.Size = UDim2.new(0, 326, 0, 138)
+
+title_2.Name = "title"
+title_2.Parent = h1av_3
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Position = UDim2.new(0.0245398767, 0, 0.0507246368, 0)
+title_2.Size = UDim2.new(0, 200, 0, 32)
+title_2.Font = Enum.Font.SourceSans
+title_2.Text = "outline editor"
+title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_2.TextScaled = true
+title_2.TextSize = 14.000
+title_2.TextWrapped = true
+title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+color.Name = "color"
+color.Parent = h1av_3
+color.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+color.BorderColor3 = Color3.fromRGB(255, 255, 255)
+color.Position = UDim2.new(0.0245398786, 0, 0.362318844, 0)
+color.Size = UDim2.new(0, 170, 0, 60)
+
+TextLabel_8.Parent = color
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0, 0, 0.0833333358, 0)
+TextLabel_8.Size = UDim2.new(0, 57, 0, 28)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "R"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+inputr.Name = "inputr"
+inputr.Parent = color
+inputr.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+inputr.BorderColor3 = Color3.fromRGB(255, 255, 255)
+inputr.Position = UDim2.new(0.0529411733, 0, 0.550000012, 0)
+inputr.Size = UDim2.new(0, 38, 0, 17)
+inputr.Font = Enum.Font.SourceSans
+inputr.PlaceholderColor3 = Color3.fromRGB(188, 188, 188)
+inputr.PlaceholderText = "0-255"
+inputr.Text = ""
+inputr.TextColor3 = Color3.fromRGB(255, 255, 255)
+inputr.TextScaled = true
+inputr.TextSize = 14.000
+inputr.TextWrapped = true
+
+inputg.Name = "inputg"
+inputg.Parent = color
+inputg.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+inputg.BorderColor3 = Color3.fromRGB(255, 255, 255)
+inputg.Position = UDim2.new(0.388235301, 0, 0.550000012, 0)
+inputg.Size = UDim2.new(0, 38, 0, 17)
+inputg.Font = Enum.Font.SourceSans
+inputg.PlaceholderColor3 = Color3.fromRGB(188, 188, 188)
+inputg.PlaceholderText = "0-255"
+inputg.Text = ""
+inputg.TextColor3 = Color3.fromRGB(255, 255, 255)
+inputg.TextScaled = true
+inputg.TextSize = 14.000
+inputg.TextWrapped = true
+
+inputb.Name = "inputb"
+inputb.Parent = color
+inputb.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+inputb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+inputb.Position = UDim2.new(0.723529398, 0, 0.550000012, 0)
+inputb.Size = UDim2.new(0, 38, 0, 17)
+inputb.Font = Enum.Font.SourceSans
+inputb.PlaceholderColor3 = Color3.fromRGB(188, 188, 188)
+inputb.PlaceholderText = "0-255"
+inputb.Text = ""
+inputb.TextColor3 = Color3.fromRGB(255, 255, 255)
+inputb.TextScaled = true
+inputb.TextSize = 14.000
+inputb.TextWrapped = true
+
+TextLabel_9.Parent = color
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.670588255, 0, 0.0833333358, 0)
+TextLabel_9.Size = UDim2.new(0, 57, 0, 28)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "B"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = color
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.335294127, 0, 0.0833333358, 0)
+TextLabel_10.Size = UDim2.new(0, 57, 0, 28)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "G"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+TextButton_3.Parent = h1av_3
+TextButton_3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextButton_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.582822144, 0, 0.442028999, 0)
+TextButton_3.Size = UDim2.new(0, 72, 0, 39)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "change"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
 popup.Name = "popup"
 popup.Parent = main
 popup.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
@@ -664,19 +806,19 @@ holder_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
 holder_3.Position = UDim2.new(0.208642513, 0, 0.328282833, 0)
 holder_3.Size = UDim2.new(0, 289, 0, 134)
 
-title_2.Name = "title"
-title_2.Parent = holder_3
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.0415224917, 0, 0.0373134315, 0)
-title_2.Size = UDim2.new(0, 200, 0, 50)
-title_2.Font = Enum.Font.SourceSans
-title_2.Text = "</n> Poup Title"
-title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_2.TextScaled = true
-title_2.TextSize = 14.000
-title_2.TextWrapped = true
-title_2.TextXAlignment = Enum.TextXAlignment.Left
+title_3.Name = "title"
+title_3.Parent = holder_3
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.Position = UDim2.new(0.0415224917, 0, 0.0373134315, 0)
+title_3.Size = UDim2.new(0, 200, 0, 50)
+title_3.Font = Enum.Font.SourceSans
+title_3.Text = "</n> Poup Title"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextScaled = true
+title_3.TextSize = 14.000
+title_3.TextWrapped = true
+title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 desc.Name = "desc"
 desc.Parent = holder_3
@@ -721,7 +863,7 @@ n.TextWrapped = true
 
 -- Scripts:
 
-local function NIQCLIY_fake_script() -- main.drag 
+local function FZBDI_fake_script() -- main.drag 
 	local script = Instance.new('LocalScript', main)
 
 	
@@ -766,8 +908,8 @@ local function NIQCLIY_fake_script() -- main.drag
 		end
 	end)
 end
-coroutine.wrap(NIQCLIY_fake_script)()
-local function VODE_fake_script() -- ScreenGui.m1 
+coroutine.wrap(FZBDI_fake_script)()
+local function NCUD_fake_script() -- ScreenGui.m1 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	warn("[MAIN]: INITLAZING")
@@ -776,7 +918,6 @@ local function VODE_fake_script() -- ScreenGui.m1
 	
 	list = {}
 	selected = "home"
-	popup = false 
 	tracking = false
 	
 	for i, v in pairs(script.Parent.main.list:GetChildren()) do 
@@ -792,38 +933,29 @@ local function VODE_fake_script() -- ScreenGui.m1
 		end
 	end
 	
-	function popup()
-		print("b")
-		local title = "btea"
-		local desc = "AU"
-		local v1 = false
-		print(title, desc, v1)
-		print("c")
-		--if popup == true then 
-			--return 
-		--else 
-			 -- popup = true 
-			script.Parent.main:WaitForChild("popup").Visible = true
-	        script.Parent.main.popup.holder:WaitForChild("title").Text = title 
-			script.Parent.main.popup.holder:WaitForChild("desc").Text = desc
-			script.Parent.main.popup.holder:WaitForChild("y").MouseButton1Down:Connect(function()
-			v1 = true
-			print("d")
-				wait(1)
-				script.Parent.main:WaitForChild("popup").Visible = false
-				popup = false
-				print(v1)
-				return
-			end)
-			script.Parent.main.popup.holder:WaitForChild("n").MouseButton1Down:Connect(function()
-				v1 = false
-				wait(1)
-				script.Parent.main:WaitForChild("popup").Visible = false
-				popup = false
-				return
-			end)
+	local function popup(t, d, st)
+		
+	end
+	
+	local function initalizecolorswitch()
+		print("doing, functions.")
+		local r = script.Parent.main.holder.settings.h1av.color.inputr.Text
+		local g = script.Parent.main.holder.settings.h1av.color.inputg.Text
+		local b = script.Parent.main.holder.settings.h1av.color.inputb.Text
+		print("vars defined")
+	
+		for i, v in pairs(script.Parent.main:GetDescendants()) do 
+			wait(0.1)
+			if v:IsA("Frame") or v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("TextBox") then
+					if v.BorderSizePixel == 1 then 
+						print("a")
+						v.BorderColor3 = Color3.fromRGB(r, g, b)
+						print(r, g, b)
+					end
+			end
 		end
-	--end
+	end
+	
 	
 	for i, v in pairs(script.Parent.main.holder:GetChildren()) do 
 		if v.Name == "home" then 
@@ -862,10 +994,16 @@ local function VODE_fake_script() -- ScreenGui.m1
 	-- tracking redirect
 	
 	script.Parent.main.holder.home.h2av.disabled.goto.MouseButton1Down:Connect(function()
-		print("a")
-		wait(2)
-		popup()
-		-- Enable tracking", "Allow your script to save local game information
+		
+	end)
+	
+	-- settings 
+	
+	-- settings outline editor 
+	
+	script.Parent.main.holder.settings.h1av.TextButton.MouseButton1Down:Connect(function()
+		print("clicked!!")
+		initalizecolorswitch()
 	end)
 	
 	-- functions
@@ -907,4 +1045,4 @@ local function VODE_fake_script() -- ScreenGui.m1
 		switch("music")
 	end)
 end
-coroutine.wrap(VODE_fake_script)()
+coroutine.wrap(NCUD_fake_script)()
